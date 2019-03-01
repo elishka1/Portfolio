@@ -1,0 +1,29 @@
+
+
+.sideNav {
+    height: 100%;
+    width: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    transition: 0.5s;
+    padding-top: 60px;
+    grid-area: sidebar;
+  }
+  
+  .sideNav a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sideNav a:hover {
+    color: #0CFDD3;
+  }
+  
+ 
+      
+  
