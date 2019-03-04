@@ -1,29 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Londrina+Outline');
 
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #171717;
+}
 
 .sideNav {
-    height: 100%;
+    grid-area: icons;
+    height: 50%;
     width: 30px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    transition: 0.5s;
-    padding-top: 60px;
-    grid-area: sidebar;
+    padding-top: 90px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 60px
+    
   }
   
   .sideNav a{
+
+    color:#434445;
+    
+  } 
+  
+  .sideNav :hover {
+    color: mediumvioletred
+  } 
+
+  .sideNav2 {
+    grid-area: social;
+    height: 50%;
+    width: 30px;
+    text-align: center;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 150px
+    
   }
   
-  .sideNav a:hover {
-    color: #0CFDD3;
+  .sideNav2 a{
+
+    color:#434445;
+    
+  } 
+  
+  .sideNav2 :hover {
+    color: mediumvioletred
+  } 
+
+  .hi {
+    grid-area: main1;
+    color: white;
+    padding-right: 20px;
+    font-family: "Londrina Outline";
+    font-size: 400%;
+    font-weight: 100;
+    animation-name: flash;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    padding-left: 150px;
+    margin-top: 300px
+
+  }
+
+  @keyframes flash {
+    from {color: mediumvioletred;}
+    to {color: darkorange;}
+  }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 0.125fr [cons] 1.7fr 2.2fr;
+    grid-template-rows: 0.4fr 0.8fr 2fr 0.8fr 1fr;
+    grid-template-areas: "logo header header" 
+                        ". main1 main2"
+                        "icons main1 main2" 
+                        ". main1 main2"
+                        "social footer footer";
+    height:100vh;
+    width: 100vw;
   }
   
+  .one {
+      grid-area: footer;
+      background-color: #252627;
+  }
  
-      
+  .two{
+      grid-area: icons;
+      background-color:#171717;
+  }    
   
+  .three {
+      grid-area: main1;
+      background-color: #252627;
+  }
+
+  .four {
+    grid-area: main2;
+    background-color: #252627;
+  }
+
+  
+  .five {
+    grid-area: social;
+    background-color:#171717;
+  }
+
+  .six {
+    grid-area: logo;
+    background-color:#0A0A0B;
+  }
+
+  .seven {
+    grid-area: header;
+    background-color:#252627;
+  }
