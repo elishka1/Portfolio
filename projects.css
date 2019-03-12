@@ -57,76 +57,11 @@ body, html {
   
   .sideNav2 :hover {
     color: mediumvioletred
-  } 
-
-  .hi {
-    grid-area: main1;
-    color: white;
-    font-family: "Quicksand";
-    font-size: 500%;
-    font-weight: 50;
-    display: flex;
-    justify-content: left;
-    margin-left: 130px;
-    margin-top: -70px;
-    position: relative;
-    
   }
 
-  #cn {
-    color: #7A7A7A;
-    font-family: "Quicksand";
-    grid-area: main1;
-    letter-spacing: 2px;
-    font-size: 12px;
-    display: flex;
-    justify-content: left;
-    margin-left: 130px;
-    margin-top: -50px;
-    position: relative;
-
-  }
-    /* animation-name: flash;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-play-state: running;
-  }
-
-  @keyframes flash {
-    from {color: mediumvioletred;}
-    to {color: darkorange;}
-  }  */
-
-  #contact {
-    grid-area: main1;
-    border-radius: 5px;
-    height: 40px;
-    width: 150px;
-    position: relative;
-    background-color: #252627;
-    color: mediumvioletred;
-    border-color: mediumvioletred;
-    font-size: 15px;
-    font-family: "Quicksand";
-    letter-spacing: 2px;
-    margin-left: 130px;
-    margin-top: 50px;
-    
-  }
-
-  #contact:hover {
-   background-color: mediumvioletred;
-   color: white;
-  }
-
-  #contact:focus {
-    outline:0;
-}
 
 
-  .grid-container {
+.grid-container {
     display: grid;
     grid-template-columns: 0.125fr [cons] 1.7fr 2.2fr;
     grid-template-rows: 0.4fr 0.8fr 2.6fr 0.8fr 0.4fr;
@@ -178,4 +113,8 @@ body, html {
   .intro {
     grid-area: main1;
     align-self: center;
+  }
+
+  .pro {
+      font-size: 60px;s
   }
